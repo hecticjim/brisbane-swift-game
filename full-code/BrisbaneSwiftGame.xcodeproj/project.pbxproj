@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162245612550C342000904F5 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162245602550C342000904F5 /* GameOverView.swift */; };
+		164BB234253E47E600B9151C /* PlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BB233253E47E600B9151C /* PlayerControlView.swift */; };
+		164BB237253FA48700B9151C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BB236253FA48700B9151C /* MessageView.swift */; };
+		164BB23B253FA5E900B9151C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BB23A253FA5E900B9151C /* Helpers.swift */; };
+		164BB23F253FA63B00B9151C /* adventure-pixels.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 164BB23E253FA63B00B9151C /* adventure-pixels.ttf */; };
+		164BB243253FA83F00B9151C /* GameInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BB242253FA83E00B9151C /* GameInterfaceView.swift */; };
+		16921735253CFA5A00B95302 /* BrisbaneSwiftGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921734253CFA5A00B95302 /* BrisbaneSwiftGameApp.swift */; };
+		16921737253CFA5A00B95302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921736253CFA5A00B95302 /* ContentView.swift */; };
+		16921739253CFA5A00B95302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16921738253CFA5A00B95302 /* Assets.xcassets */; };
+		1692173C253CFA5A00B95302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1692173B253CFA5A00B95302 /* Preview Assets.xcassets */; };
+		16921746253CFB3800B95302 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921745253CFB3800B95302 /* GameScene.swift */; };
+		1692174A253CFC5A00B95302 /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921749253CFC5A00B95302 /* SceneController.swift */; };
+		1692174D253CFE9D00B95302 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1692174C253CFE9D00B95302 /* GameScene.sks */; };
+		16921751253D005800B95302 /* GameTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1692174F253D005800B95302 /* GameTiles.sks */; };
+		16921756253E425C00B95302 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921755253E425C00B95302 /* GameController.swift */; };
+		1692175A253E42E100B95302 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16921759253E42E100B95302 /* Events.swift */; };
+		1692CC4E254F71E7002EC892 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692CC4D254F71E7002EC892 /* EnemyNode.swift */; };
+		1692CC52254F7F0F002EC892 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692CC51254F7F0F002EC892 /* ScoreView.swift */; };
+		16BC331F2547884700E74BBA /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC331E2547884700E74BBA /* PlayerNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		162245602550C342000904F5 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		164BB233253E47E600B9151C /* PlayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlView.swift; sourceTree = "<group>"; };
+		164BB236253FA48700B9151C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		164BB23A253FA5E900B9151C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		164BB23E253FA63B00B9151C /* adventure-pixels.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventure-pixels.ttf"; sourceTree = "<group>"; };
+		164BB242253FA83E00B9151C /* GameInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInterfaceView.swift; sourceTree = "<group>"; };
+		16921731253CFA5A00B95302 /* BrisbaneSwiftGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrisbaneSwiftGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16921734253CFA5A00B95302 /* BrisbaneSwiftGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrisbaneSwiftGameApp.swift; sourceTree = "<group>"; };
+		16921736253CFA5A00B95302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16921738253CFA5A00B95302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1692173B253CFA5A00B95302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1692173D253CFA5A00B95302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16921745253CFB3800B95302 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		16921749253CFC5A00B95302 /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
+		1692174C253CFE9D00B95302 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1692174F253D005800B95302 /* GameTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameTiles.sks; sourceTree = "<group>"; };
+		16921755253E425C00B95302 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		16921759253E42E100B95302 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		1692CC4D254F71E7002EC892 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		1692CC51254F7F0F002EC892 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		16BC331E2547884700E74BBA /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1692172E253CFA5A00B95302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		164BB230253E471C00B9151C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16921736253CFA5A00B95302 /* ContentView.swift */,
+				164BB242253FA83E00B9151C /* GameInterfaceView.swift */,
+				1692CC51254F7F0F002EC892 /* ScoreView.swift */,
+				164BB236253FA48700B9151C /* MessageView.swift */,
+				164BB233253E47E600B9151C /* PlayerControlView.swift */,
+				162245602550C342000904F5 /* GameOverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		164BB239253FA5D900B9151C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				164BB23A253FA5E900B9151C /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		164BB23D253FA63300B9151C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				164BB23E253FA63B00B9151C /* adventure-pixels.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		16921728253CFA5900B95302 = {
+			isa = PBXGroup;
+			children = (
+				16921733253CFA5A00B95302 /* BrisbaneSwiftGame */,
+				16921732253CFA5A00B95302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16921732253CFA5A00B95302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16921731253CFA5A00B95302 /* BrisbaneSwiftGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16921733253CFA5A00B95302 /* BrisbaneSwiftGame */ = {
+			isa = PBXGroup;
+			children = (
+				164BB23D253FA63300B9151C /* Font */,
+				164BB239253FA5D900B9151C /* Utils */,
+				164BB230253E471C00B9151C /* Views */,
+				16921748253CFC0B00B95302 /* Controllers */,
+				16921744253CFB1500B95302 /* Game Scene */,
+				16921734253CFA5A00B95302 /* BrisbaneSwiftGameApp.swift */,
+				16921738253CFA5A00B95302 /* Assets.xcassets */,
+				1692173D253CFA5A00B95302 /* Info.plist */,
+				1692173A253CFA5A00B95302 /* Preview Content */,
+			);
+			path = BrisbaneSwiftGame;
+			sourceTree = "<group>";
+		};
+		1692173A253CFA5A00B95302 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1692173B253CFA5A00B95302 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16921744253CFB1500B95302 /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1692CC4C254F71D1002EC892 /* Nodes */,
+				16921745253CFB3800B95302 /* GameScene.swift */,
+				1692174C253CFE9D00B95302 /* GameScene.sks */,
+				1692174F253D005800B95302 /* GameTiles.sks */,
+			);
+			path = "Game Scene";
+			sourceTree = "<group>";
+		};
+		16921748253CFC0B00B95302 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16921749253CFC5A00B95302 /* SceneController.swift */,
+				16921755253E425C00B95302 /* GameController.swift */,
+				16921759253E42E100B95302 /* Events.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1692CC4C254F71D1002EC892 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				16BC331E2547884700E74BBA /* PlayerNode.swift */,
+				1692CC4D254F71E7002EC892 /* EnemyNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16921730253CFA5A00B95302 /* BrisbaneSwiftGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16921740253CFA5A00B95302 /* Build configuration list for PBXNativeTarget "BrisbaneSwiftGame" */;
+			buildPhases = (
+				1692172D253CFA5A00B95302 /* Sources */,
+				1692172E253CFA5A00B95302 /* Frameworks */,
+				1692172F253CFA5A00B95302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrisbaneSwiftGame;
+			productName = BrisbaneSwiftGame;
+			productReference = 16921731253CFA5A00B95302 /* BrisbaneSwiftGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16921729253CFA5900B95302 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					16921730253CFA5A00B95302 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 1692172C253CFA5900B95302 /* Build configuration list for PBXProject "BrisbaneSwiftGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16921728253CFA5900B95302;
+			productRefGroup = 16921732253CFA5A00B95302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16921730253CFA5A00B95302 /* BrisbaneSwiftGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1692172F253CFA5A00B95302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1692173C253CFA5A00B95302 /* Preview Assets.xcassets in Resources */,
+				1692174D253CFE9D00B95302 /* GameScene.sks in Resources */,
+				16921739253CFA5A00B95302 /* Assets.xcassets in Resources */,
+				164BB23F253FA63B00B9151C /* adventure-pixels.ttf in Resources */,
+				16921751253D005800B95302 /* GameTiles.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1692172D253CFA5A00B95302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162245612550C342000904F5 /* GameOverView.swift in Sources */,
+				1692175A253E42E100B95302 /* Events.swift in Sources */,
+				16921746253CFB3800B95302 /* GameScene.swift in Sources */,
+				16BC331F2547884700E74BBA /* PlayerNode.swift in Sources */,
+				16921756253E425C00B95302 /* GameController.swift in Sources */,
+				164BB23B253FA5E900B9151C /* Helpers.swift in Sources */,
+				164BB237253FA48700B9151C /* MessageView.swift in Sources */,
+				164BB234253E47E600B9151C /* PlayerControlView.swift in Sources */,
+				1692174A253CFC5A00B95302 /* SceneController.swift in Sources */,
+				16921737253CFA5A00B95302 /* ContentView.swift in Sources */,
+				16921735253CFA5A00B95302 /* BrisbaneSwiftGameApp.swift in Sources */,
+				1692CC4E254F71E7002EC892 /* EnemyNode.swift in Sources */,
+				1692CC52254F7F0F002EC892 /* ScoreView.swift in Sources */,
+				164BB243253FA83F00B9151C /* GameInterfaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1692173E253CFA5A00B95302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1692173F253CFA5A00B95302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16921741253CFA5A00B95302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrisbaneSwiftGame/Preview Content\"";
+				DEVELOPMENT_TEAM = X6QYTX3MZ9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BrisbaneSwiftGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimswiney.BrisbaneSwiftGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16921742253CFA5A00B95302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrisbaneSwiftGame/Preview Content\"";
+				DEVELOPMENT_TEAM = X6QYTX3MZ9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BrisbaneSwiftGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimswiney.BrisbaneSwiftGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1692172C253CFA5900B95302 /* Build configuration list for PBXProject "BrisbaneSwiftGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1692173E253CFA5A00B95302 /* Debug */,
+				1692173F253CFA5A00B95302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16921740253CFA5A00B95302 /* Build configuration list for PBXNativeTarget "BrisbaneSwiftGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16921741253CFA5A00B95302 /* Debug */,
+				16921742253CFA5A00B95302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16921729253CFA5900B95302 /* Project object */;
+}
