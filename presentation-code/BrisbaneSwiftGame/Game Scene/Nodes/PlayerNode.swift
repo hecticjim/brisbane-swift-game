@@ -10,6 +10,75 @@ import SpriteKit
 
 class PlayerNode : SKSpriteNode {
 
+    func setupPhysics() {
+        let body = SKPhysicsBody(circleOfRadius: 16)
+        body.allowsRotation = false
+        body.categoryBitMask = GameScene.PhysicsCategory.player | GameScene.PhysicsCategory.enemy
+        body.collisionBitMask = GameScene.PhysicsCategory.player | GameScene.PhysicsCategory.enemy
+        body.contactTestBitMask = GameScene.PhysicsCategory.player | GameScene.PhysicsCategory.enemy
+        self.physicsBody = body
+    }
+    
+    func move(in direction:Direction) {
+        
+        animateFor(direction: direction)
+        
+        switch direction {
+        case let .left(moving):
+            physicsBody?.velocity = .init(dx: moving ? -100 : 0, dy: 0)
+            break
+        case let .right(moving):
+            physicsBody?.velocity = .init(dx: moving ? 100 : 0, dy: 0)
+            break
+        case let .up(moving):
+            physicsBody?.velocity = .init(dx: 0, dy: moving ? 100 : 0)
+            break
+        case let .down(moving):
+            physicsBody?.velocity = .init(dx: 0, dy: moving ? -100 : 0)
+            break
+        }
+    }
+    
+    func attack(in direction:Direction) {
+        
+        attackAnimation(direction: direction)
+        
+        let attackNode = createAttackNode()
+        
+        switch direction {
+        case .left:
+            attackNode.position = .init(x: -16, y: 0)
+            break
+        case .right:
+            attackNode.position = .init(x: 16, y: 0)
+            break
+        case .up:
+            attackNode.position = .init(x: 0, y: 16)
+            break
+        case .down:
+            attackNode.position = .init(x: 0, y: -16)
+            break
+        }
+        
+        addChild(attackNode)
+        
+        attackNode.run(.sequence([.wait(forDuration: 0.3),.removeFromParent()]))
+    }
+    
+    func createAttackNode() -> SKSpriteNode {
+        
+        let attackNode = SKSpriteNode(color: .clear, size: .init(width: 48, height: 48))
+        attackNode.name = "weapon"
+        
+        let body = SKPhysicsBody(rectangleOf: attackNode.size)
+        body.allowsRotation = false
+        body.categoryBitMask = GameScene.PhysicsCategory.weapon
+        body.collisionBitMask = 0
+        body.contactTestBitMask = GameScene.PhysicsCategory.weapon
+        attackNode.physicsBody = body
+        
+        return attackNode
+    }
     
 }
 
