@@ -135,6 +135,6 @@ struct PlayerControlShape: Shape {
 
 struct PlayerControlView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerControlView(controller: GameController())
+        PlayerControlView(controller: GameController()).previewLayout(.fixed(width: 600.0, height: 375.0))
     }
 }

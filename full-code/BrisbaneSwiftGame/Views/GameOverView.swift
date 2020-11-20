@@ -35,3 +35,9 @@ struct GameOverView: View {
         }
     }
 }
+
+struct GameOverView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameOverView(tapAction: {}).previewLayout(.fixed(width: 600.0, height: 375.0))
+    }
+}

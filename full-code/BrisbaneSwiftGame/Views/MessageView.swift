@@ -78,3 +78,11 @@ struct TypingText : AnimatableModifier {
     }
     
 }
+
+
+struct MessageView_Previews: PreviewProvider {
+    static var previews: some View {
+        MessageView(message: "Just previewing the text in the preview window", dismissAction: {}).previewLayout(.fixed(width: 600.0, height: 375.0))
+            
+    }
+}

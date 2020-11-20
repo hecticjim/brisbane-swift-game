@@ -27,3 +27,10 @@ struct ScoreView: View {
         }
     }
 }
+
+
+struct ScoreView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScoreView(score:1000).previewLayout(.fixed(width: 600.0, height: 375.0))
+    }
+}
