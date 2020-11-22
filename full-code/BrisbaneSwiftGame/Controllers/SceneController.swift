@@ -23,7 +23,7 @@ class SceneController : ObservableObject {
     var eventSubscriptions = Set<AnyCancellable>()
     
     init() {
-        gameScene = (GKScene(fileNamed: "GameScene")!.rootNode as! GameScene)
+        gameScene = GameScene(fileNamed: "GameScene")!
         gameScene.handleEvents(controller:gameController)
         handleEvents()
     }
