@@ -26,10 +26,11 @@ class GameScene: SKScene {
         playerNode = childNode(withName: "player") as? PlayerNode
         playerNode?.setupPhysics()
         setupSignPhysics()
-        
-        startSpawning()
     }
 
+    override func update(_ currentTime: TimeInterval) {
+        enemies.forEach({ $0.moveTowards(playerPosition: playerNode?.position ?? .zero) })
+    }
 }
 
 //Enemy Handling
