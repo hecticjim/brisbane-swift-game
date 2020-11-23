@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+struct PlayerControlView: View {
+    
+    var body: some View {
+        EmptyView()
+    }
+}
+
 struct PlayerControlShape: Shape {
     
     func path(in rect: CGRect) -> Path {
@@ -24,6 +31,6 @@ struct PlayerControlShape: Shape {
 
 struct PlayerControlView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerControlView(controller: GameController())
+        PlayerControlView().previewLayout(.fixed(width: 600.0, height: 375.0))
     }
 }

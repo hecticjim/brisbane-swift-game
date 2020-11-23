@@ -13,3 +13,11 @@ struct ContentView: View {
         EmptyView()
     }
 }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .previewLayout(.fixed(width: 600.0, height: 375.0))
+    }
+}
