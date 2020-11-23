@@ -16,7 +16,38 @@ class GameScene: SKScene {
         static let enemy : UInt32 = 0b1 << 2
         static let weaponNoCollision : UInt32 = 0b1 << 2
     }
+    
+    var playerNode : PlayerNode?
+    var enemies = [EnemyNode]()
+    
+    override func didMove(to view: SKView) {
+        super.didMove(to: view)
+        physicsWorld.contactDelegate = self
+        playerNode = childNode(withName: "player") as? PlayerNode
+        playerNode?.setupPhysics()
+        setupSignPhysics()
+        
+        startSpawning()
+    }
 
+}
+
+//Enemy Handling
+extension GameScene {
+    
+    func startSpawning() {
+        run(.repeatForever(.sequence([.wait(forDuration: 3),.run({ self.spawnEnemy() })])))
+    }
+    
+    func spawnEnemy() {
+        let enemy = EnemyNode(imageNamed: "blob-1")
+        enemy.name = "enemy"
+        enemy.position = randomPositionOutsideOfScene()
+        addChild(enemy)
+        enemy.setup()
+        enemies.append(enemy)
+    }
+    
 }
 
 
